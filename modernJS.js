@@ -1,6 +1,6 @@
 // import
-import {addToCart, totalPrice, totalQuantity} from './module.js'
+import {addToCart, shoppingCart, totalPrice as tp, tq} from './module.js'
 console.log('import module');
 addToCart('phone', 2);
 
-console.log(totalPrice, totalQuantity)
+console.log(tp, tq, shoppingCart)

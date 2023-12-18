@@ -56,3 +56,40 @@ console.log(lastPost2); //{title: 'at nam consequatur ea labore ea harum', text:
 
 
 // console.log("end fetching");
+
+
+
+
+
+///////////////////////////////////////////////
+const shoppingCart=(() => {
+    const cart = [];
+    const shippingCost=10;
+    const totalPrice = 278;
+    const totalQuantity = 24;
+  
+    const addToCart = (product, quantity) => {
+      cart.push({ product, quantity });
+      console.log(`${quantity} ${product}`);
+    };
+  
+    const orderStock = (product, quantity) => {
+      cart.push({ product, quantity });
+      console.log(`${quantity} ${product} ordered from supplier`);
+    };
+  
+    return{
+      addToCart,
+      cart,
+      totalPrice,
+      totalQuantity,
+      orderStock,
+      shippingCost,
+    };
+  
+  })();
+  
+  shoppingCart.addToCart('apple', 20);
+  shoppingCart.addToCart('orange', 30);
+  console.log(shoppingCart);
+  console.log(shoppingCart.shippingCost);

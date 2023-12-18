@@ -1,5 +1,5 @@
 // exporting
-console.log('export module'); 
+console.log('export module');
 
 const shoppingCart=10;
 export const cart= [];
@@ -14,8 +14,10 @@ const totalQuantity= 24;
 
 export {totalPrice, totalQuantity as tq, shoppingCart}
 
-
 export default (product, quantity)=>{
     cart.push({product, quantity});
     console.log(`${quantity} ${product}`);
 }
+
+
+
